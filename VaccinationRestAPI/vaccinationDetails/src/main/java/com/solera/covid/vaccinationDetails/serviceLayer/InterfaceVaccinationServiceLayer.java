@@ -1,0 +1,24 @@
+package com.solera.covid.vaccinationDetails.serviceLayer;
+
+import java.util.List;
+
+import com.solera.covid.vaccinationDetails.entity.Vaccination;
+
+public interface InterfaceVaccinationServiceLayer {
+	public List<Vaccination> showAll();
+
+	public Vaccination showById(int healthId);
+
+	public String saveOrUpdate(Vaccination vaccination);
+
+	public List<Vaccination> vaccinatedList(int noOfDose);
+
+	public int delete(int noOfDoses);
+
+	public void deleteById(int healthId);
+
+	public List<Vaccination> vaccineByType(String vaccineName);
+
+	public List<Vaccination> vaccineCountReprt();
+	
+}
